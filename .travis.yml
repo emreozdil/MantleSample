@@ -1,4 +1,13 @@
-language: swift
-osx_image: xcode8.3
-script:
-    - xcodebuild clean test -project MantleSample.xcodeproj -workspace MantleSample.xcworkspace -scheme MantleSample -destination "platform=iOS Simulator,name=iPhone 7,OS=10.3" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -quiet
+{
+  "language": "objective-c",
+  "osx_image": "xcode8.3",
+  "env": "SCHEME=\"MantleSample\"      DESTINATION=\"platform=iOS Simulator,name=iPhone 6S\"              RUN_TESTS=\"YES\"   SEND_TO_COVERALLS=\"YES\"",
+  "script": [
+    "if [ $RUN_TESTS == \"YES\" ]; then travis_retry xcodebuild -workspace \"MantleSample.xcworkspace\" -scheme \"$SCHEME\" -destination \"$DESTINATION\" test; else travis_retry xcodebuild -workspace \"MantleSample.xcworkspace\" -scheme \"$SCHEME\" -destination \"$DESTINATION\" build; fi"
+  ],
+  "after_success": [
+    "if [ $SEND_TO_COVERALLS == \"YES\" ]; then echo \"Send to coveralls\" slather fi"
+  ],
+  "global_env": "LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8",
+  "os": "osx"
+}
