@@ -1,8 +1,8 @@
-[![Travis CI](https://travis-ci.org/emreozdil/MantleSample.svg?branch=master)](https://travis-ci.org/emreozdil/MantleSample/builds)
+# Mantle Sample [![Travis CI](https://travis-ci.org/emreozdil/MantleSample.svg?branch=master)](https://travis-ci.org/emreozdil/MantleSample/builds)
 
 ### Introduction
 
-MantleSample complements JSON serialize and object mapping  with convienent tools for deploying MVC patterns in Cocoa applications.
+Mantle Sample complements JSON serialize and object mapping without using JSON key deploying MVC patterns in applications.
 
 ### Requirements
 1. Swift 3.2
