@@ -1,4 +1,4 @@
-# Mantle Sample [![Travis CI](https://travis-ci.org/emreozdil/MantleSample.svg?branch=master)](https://travis-ci.org/emreozdil/MantleSample/builds)
+# Mantle Sample [![Travis CI](https://travis-ci.org/emreozdil/MantleSample.svg?branch=master)](https://travis-ci.org/emreozdil/MantleSample/builds)[![Dependency Status](https://www.versioneye.com/user/projects/59a5c25b6725bd004562728b/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/59a5c25b6725bd004562728b)
 
 ### Introduction
 
